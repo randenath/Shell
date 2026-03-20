@@ -1,37 +1,37 @@
-#
 # Samantha Foley
-# CS 441/541: Project 2
+#
+# CS441/541: Project 3
 #
 #####################################################################
 #
-# Type "make" to compile your code
+# Type "make" or "make mysh" to compile your code
 # 
 # Type "make clean" to remove the executable (and any object files)
 #
 #####################################################################
+
 CC=gcc
-CFLAGS=-Wall -g -O0
-LDFLAGS=
+CFLAGS=-Wall -g
 
 #
 # List all of the binary programs you want to build here
 # Separate each program with a single space
 #
-all: scheduler
+all: mysh
 
 #
-# Scheduler program
+# Main shell program
 #
-scheduler: scheduler.c scheduler.h
-	$(CC) -o scheduler $(CFLAGS) scheduler.c
+mysh: mysh.c mysh.h 
+	$(CC) -o mysh mysh.c  $(CFLAGS)
+
 
 #
 # Cleanup the files that we have created
 #
 clean:
-	$(RM) scheduler
-	$(RM) -rf *.dSYM
-	$(RM) test_out
+	$(RM) mysh *.o
+	$(RM) -rf *.dSYM *~
 
 #
 # Tests
