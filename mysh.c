@@ -1,5 +1,5 @@
 /* Assignment 3: Shell
- * Author: Rohan Hari
+ * Author: Rohan H
  * Last Modified: 03/10/2026
  *
  * CS441/541: Project 3
