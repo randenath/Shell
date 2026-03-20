@@ -1,7 +1,7 @@
 # CS441/541 Shell Project
 
 ## Author(s):
-Rohan Hari
+Rohan H
 
 
 ## Date:
