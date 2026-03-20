@@ -1,5 +1,5 @@
 /*
- * Rohan Hari
+ * Rohan H
  *
  * CS441/541: Project 3
  *
