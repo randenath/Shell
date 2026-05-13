@@ -1,0 +1,30 @@
+echo "Test 5: All Commands Test"
+
+date
+pwd
+echo "Shell test in progress..."
+
+echo "Job 1" ; echo "Job 2" ; echo "Job 3"
+
+sleep 4 &
+sleep 2 &
+sleep 1 &
+
+jobs
+
+echo "Background output" > bg_test.txt &
+sleep 2 > sleep_test.txt &
+jobs
+wait
+cat bg_test.txt
+cat sleep_test.txt
+
+echo "Input test data" > input.txt
+cat < input.txt
+
+history
+
+jobs
+
+rm bg_test.txt sleep_test.txt input.txt
+echo "All tests complete!"

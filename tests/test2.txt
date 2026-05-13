@@ -1,0 +1,15 @@
+echo "Test 2: Background Jobs"
+
+sleep 5 &
+sleep 3 &
+sleep 1 &
+
+jobs
+
+sleep 2
+
+jobs
+
+wait
+
+jobs

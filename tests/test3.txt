@@ -1,0 +1,17 @@
+echo "Test 3: File Redirection"
+
+echo "First line of text" > test_out1.txt
+echo "Second line of text" > test_out2.txt
+ls -l > test_ls.txt
+
+cat test_out1.txt
+cat test_out2.txt
+cat test_ls.txt
+
+cat < test_out1.txt
+wc -l < test_ls.txt
+
+cat < test_out1.txt > test_combined.txt
+cat test_combined.txt
+
+rm test_out1.txt test_out2.txt test_ls.txt test_combined.txt

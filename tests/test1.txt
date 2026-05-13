@@ -1,0 +1,8 @@
+echo "Test 1: Basic Commands"
+pwd
+whoami
+date
+echo "Hello World"
+ls -l
+history
+jobs

@@ -1,0 +1,26 @@
+echo "Test 4: fg and wait commands"
+
+sleep 10 > sleep10.out &
+sleep 5 > sleep5.out &
+sleep 3 > sleep3.out &
+
+jobs
+
+fg
+echo "Foreground job completed"
+
+jobs
+
+jobs
+echo "Now bringing job 2 to foreground..."
+fg 2
+echo "Job 2 completed"
+
+wait
+echo "All jobs done"
+
+cat sleep10.out
+cat sleep5.out
+cat sleep3.out
+
+rm sleep10.out sleep5.out sleep3.out
